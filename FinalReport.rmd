@@ -9,7 +9,7 @@ output: html_document
 require(tidyverse)
 require(tigerstats)
 triUmp <-read.csv(file="triUmpsal.csv",header=TRUE)
-females=filter(triUmp,gender=="F")
+females=filter(triUmp, gender=="F")
 ```
 
 # Introduction
@@ -46,6 +46,8 @@ basicC + geom_bar(stat="identity",position="dodge")
 basicCC <- ggplot(dd2,aes(x=infected,y=prcnt*100,fill=treatment)) 
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
+
+This plot shows that if you took the drug you are more likely to get aids then the placebo.It looks like the odds of getting aids if you take the drug three to two, and you are one and a half times more likely to get aids if you take the drug.
 
 ### Numerical Descriptive Results
 
